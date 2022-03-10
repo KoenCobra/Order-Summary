@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;900&display=swap");
+body {
+  background-color: #e0e8ff;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+}
+
+.card {
+  width: 22rem;
+  border-radius: 15px;
+  background-color: white;
+}
+.card .card-body {
+  padding: 1rem 2rem;
+}
+.card .card-header {
+  text-align: center;
+}
+.card .card-header h2 {
+  font-weight: 900;
+  font-size: 24px;
+}
+.card .plan {
+  display: flex;
+  align-items: center;
+  background-color: #f5f7ff;
+  padding: 1.3rem;
+  border-radius: 15px;
+}
+.card .plan img {
+  width: 40px;
+  height: 40px;
+  color: #7280a7;
+}
+.card .plan .price {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+.card .plan .plan-text {
+  font-weight: 600;
+}
+.card .plan a {
+  margin-left: auto;
+  color: #1f2f56;
+}
+.card .buttons {
+  display: flex;
+  flex-direction: column;
+}
+.card .buttons .payment-btn {
+  border: 0;
+  background-color: #3829e0;
+  padding: 0.7rem;
+  margin: 1.4rem 0;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+}
+.card .buttons .cancel-btn {
+  border: 0;
+  background-color: transparent;
+  color: #343434;
+  padding: 0.7rem;
+  margin: 0 0 1rem 0;
+  border-radius: 8px;
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */

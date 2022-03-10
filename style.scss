@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;900&display=swap");
 
 $Palelue: hsl(225, 100%, 94%);
 $BrightBlue: hsl(245, 75%, 52%);
@@ -10,125 +10,93 @@ $DarkBlue: hsl(223, 47%, 23%);
 $font: "Red Hat Display", sans-serif;
 
 body {
-  background-color: $mainBG;
+  background-color: $Palelue;
   height: 100vh;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: $font;
-  font-size: 18px;
+  font-size: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+}
+
 .card {
-  background: $cardBG;
-  width: 20rem;
-  padding: 1.8rem;
-  border-radius: 13px;
+  width: 22rem;
+  border-radius: 15px;
+  background-color: white;
 
-  .card-img {
-    position: relative;
+  .card-body {
+    padding: 1rem 2rem;
+  }
+
+  .card-header {
+    text-align: center;
+
+    h2 {
+      font-weight: 900;
+      font-size: 24px;
+    }
+  }
+
+  .plan {
     display: flex;
-    justify-content: center;
     align-items: center;
-    z-index: 1;
+    background-color: $VeryPaleBlue;
+    padding: 1.3rem;
+    border-radius: 15px;
 
-    .view-img {
-      position: absolute;
-      height: 45px;
-      width: 45px;
-      opacity: 0;
+    img {
+      width: 40px;
+      height: 40px;
+      color: $DesaturatedBlue;
     }
 
-    .dice-img {
-      width: 100%;
-      border-radius: 13px;
-      border-radius: 13px;
+    .price {
+      display: flex;
+      flex-direction: column;
+      margin-left: 1rem;
     }
 
-    &:hover .view-img {
-      opacity: 1;
-      z-index: 99999;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba($cyan, 0.3);
-      border-radius: 13px;
-
-      opacity: 0;
-    }
-
-    &:hover::after {
-      opacity: 1;
-      cursor: pointer;
-    }
-  }
-
-  h4 {
-    color: $White;
-    font-size: 20px;
-    font-weight: 600;
-
-    &:hover {
-      color: $cyan;
-      cursor: pointer;
-    }
-  }
-
-  p {
-    color: $soft;
-    font-weight: 300;
-  }
-
-  .card-body-footer {
-    display: flex;
-    justify-content: space-between;
-    margin: 1.5rem 0;
-
-    .ethereum {
-      color: $cyan;
-      font-size: 16px;
+    .plan-text {
       font-weight: 600;
     }
 
-    .time-left {
-      color: $soft;
-      font-size: 16px;
+    a {
+      margin-left: auto;
+      color: $DarkBlue;
     }
   }
 
-  hr {
-    color: $line;
-  }
-
-  .card-footer {
+  .buttons {
     display: flex;
-    align-items: center;
-    margin-top: 0.7rem;
+    flex-direction: column;
 
-    img {
-      height: 35px;
-      width: 35px;
-      border: 1px solid white;
-      border-radius: 50%;
-      margin-right: 1rem;
+    .payment-btn {
+      border: 0;
+      background-color: $BrightBlue;
+      padding: 0.7rem;
+      margin: 1.4rem 0;
+      border-radius: 8px;
+      color: white;
+      font-weight: bold;
     }
 
-    span {
-      color: $White;
-
-      &:hover {
-        color: $cyan;
-        cursor: pointer;
-      }
+    .cancel-btn {
+      border: 0;
+      background-color: transparent;
+      color: darken(gray, 30%);
+      padding: 0.7rem;
+      margin: 0 0 1rem 0;
+      border-radius: 8px;
+      font-weight: bold;
     }
   }
 }
