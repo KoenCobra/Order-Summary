@@ -53,9 +53,19 @@ img {
 .card .plan .plan-text {
   font-weight: 600;
 }
+.card .plan .price-year {
+  color: #7280a7;
+  margin-top: 3px;
+}
 .card .plan a {
   margin-left: auto;
-  color: #1f2f56;
+  color: #3829e0;
+  font-weight: bolder;
+  font-size: 12px;
+}
+.card .plan a:hover {
+  text-decoration: none;
+  color: #766cf1;
 }
 .card .buttons {
   display: flex;
@@ -69,13 +79,22 @@ img {
   border-radius: 8px;
   color: white;
   font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+.card .buttons .payment-btn:hover {
+  background-color: #766cf1;
+  cursor: pointer;
 }
 .card .buttons .cancel-btn {
   border: 0;
   background-color: transparent;
-  color: #343434;
+  color: #7280a7;
   padding: 0.7rem;
   margin: 0 0 1rem 0;
   border-radius: 8px;
   font-weight: bold;
+}
+.card .buttons .cancel-btn:hover {
+  color: #1f2f56;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
